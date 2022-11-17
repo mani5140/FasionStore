@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Ecommerce website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/8045adf93f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-img{
+            width: 100%;
+        }
+        .contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 40%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #ff0151;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color: rgb(111, 4, 66);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff0151;
+    transform: translateY(-8px);
+}
+.switch{
+     display: center;
+     margin: 50px auto;
+     width: fit-content;
+     border: 1px solid #ff0151;
+     padding: 15px 50px;
+     border-radius: 6px;
+     text-decoration: none;
+     color: #fff;
+     transition: background 0.5s,transform 0.5s;
+}
+.switch:hover{
+    background: #ff0151;
+    transform: translateY(-7px);
+    
+}
+.switch.btn{
+    background: #b11151;
+    display: inline-block;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 30px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 7px;
+}
+form .switch.btn{
+    margin-top: 20px;
+    padding: 14px ;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+#submitBtn{
+    width: 200px;
+}
+#msg{
+    color: rgb(5, 4, 27);
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="container" style="background: linear-gradient(135deg,#9127a6,#53a5be);">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>  
+    </div>
+    <!---------------------- single product details ----------->
+    <div><img src="contactimg.jpg" class="contact-img"></div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Feel Free to Contact Us</h1>
+                    <p><i class="fa-solid fa-envelope"></i>srimanikantagarapati12@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>8917611699</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" download class="switch btn">See More</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                        <button type="submit" class="switch btn" id="submitBtn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------- footer ------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for smart phones</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" alt="">
+                        <img src="app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Exercitationem, minima!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2022 - mani chowdary</p>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+    <script>
+        var menuItems = document.getElementById("menuitems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- js for sending message -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzhiIqUG7cP7bWrYoLYc9VzoV7D_R-fdkegnAlFTaadgssyzf_iLligzinHpLtiLVe/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>    
